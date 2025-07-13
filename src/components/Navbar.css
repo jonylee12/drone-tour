@@ -33,3 +33,59 @@
 .navbar-right a:hover {
   text-decoration: underline;
 }
+
+/* Stil de bază (Desktop implicit) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* Tabletă */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Telefon */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .navbar-logo {
+    font-size: 20px;
+  }
+  .navbar ul {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* ascuns până apeși pe butonul mobil */
+    flex-direction: column;
+   max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.navbar {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
