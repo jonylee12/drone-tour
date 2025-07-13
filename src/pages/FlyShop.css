@@ -1,0 +1,156 @@
+.flyshop-wrapper {
+  position: relative;
+  min-height: 10vh;
+  padding: 3rem 2rem;
+  background-image: url('/bg-flyshop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(23, 159, 217);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Overlay semi-transparent pt. contrast */
+.flyshop-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 0;
+}
+
+.flyshop-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.flyshop-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #eef5ed;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #117f72cb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+  padding: 0.6rem 1.2rem;
+  background-color: #7b2828;
+  color: rgb(249, 244, 244);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #333;
+}
+
+.flyshop-toast {
+  background-color: #122617;
+  color: rgb(9, 237, 154);
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem auto;
+  width: fit-content;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+.flyshop-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 0.4rem;
+  font-weight: 800;
+}
+
+.flyshop-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.flyshop-wrapper {
+  background-image: url('/drone-tour/backgrounds/flyshop-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 3rem; /* spațiu sub carusel */
+  color: white;
+}

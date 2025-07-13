@@ -1,0 +1,22 @@
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 40vh;
+  }
+}

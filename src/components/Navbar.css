@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f6a6a;
+  padding: 0.75rem 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}

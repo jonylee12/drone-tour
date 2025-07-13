@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #368888; /* închis, elegant */
+  padding: 10px 40px;
+  color: rgba(219, 231, 49, 0.801);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right a {
+  color: rgb(180, 215, 22);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-right a:hover {
+  color: #0c0c6a; /* accent la hover */
+}
+
+.site-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #b9cb1b;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}

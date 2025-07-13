@@ -1,0 +1,50 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  height: 240px;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 🔵 Buline moderne pentru navigare */
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2e8b8b;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 140px;
+  }
+}

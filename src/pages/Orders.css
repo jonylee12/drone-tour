@@ -1,0 +1,30 @@
+.orders-page {
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+.order-card {
+  background: rgb(117, 163, 124);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.order-card h4 {
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+.order-items {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.order-total {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: italic;
+}
